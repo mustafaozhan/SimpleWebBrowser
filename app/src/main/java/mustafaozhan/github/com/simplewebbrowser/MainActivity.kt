@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         webView.loadUrl("http://google.com")
-
+        webView.settings.javaScriptEnabled
         webView.webViewClient = MyWebClient()
         button.setOnClickListener { load() }
     }
